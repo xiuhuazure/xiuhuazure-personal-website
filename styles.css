@@ -216,13 +216,7 @@ mark.hl {
 }
 
 /* ---------- hero (dark) ---------- */
-.hero { padding: 0 0 clamp(56px, 7vw, 96px); }
-.hero__banner {
-  height: clamp(96px, 15vw, 220px);
-  overflow: hidden;
-  margin-bottom: clamp(40px, 5vw, 64px);
-}
-.hero__banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+.hero { padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 7vw, 96px); }
 
 .hero__grid {
   display: grid;
