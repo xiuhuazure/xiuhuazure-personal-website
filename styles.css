@@ -156,10 +156,10 @@ section, .top, .foot { background: var(--bg); color: var(--text); }
   background: currentColor;
   -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 C 30 2, 60 9, 95 5 S 160 2, 198 6' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/></svg>") no-repeat center / 100% 100%;
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 C 30 2, 60 9, 95 5 S 160 2, 198 6' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/></svg>") no-repeat center / 100% 100%;
-  transition: transform .25s ease;
-  transform-origin: left;
 }
-.scribble:hover::after { transform: scaleX(1.06) rotate(-1deg); }
+/* hover: colour change only, no movement */
+.scribble { transition: color .2s ease; }
+.scribble:hover { color: var(--accent-lilac); }
 
 /* lilac dry brush highlight behind a few key words.
    The ragged ends keep a fixed size; only the even middle stretches. */
@@ -476,6 +476,7 @@ mark.hl {
 /* ---------- recent pages (dark, moody cards) ---------- */
 .pages { padding: clamp(64px, 8vw, 112px) 0; }
 .pages .scribble { color: var(--accent-lilac); }
+.pages .scribble:hover { color: var(--accent-pink); }
 .shelf {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
