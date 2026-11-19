@@ -709,14 +709,14 @@ mark.hl {
 }
 .foot__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 12px 24px;
   flex-wrap: wrap;
 }
 .foot p { margin: 0; }
-.foot__top { color: var(--ink); font-weight: 800; text-decoration: none; }
-.foot__top:hover { text-decoration: underline; text-underline-offset: 4px; }
+.foot p { font-weight: 700; }
+.foot__heart { display: inline-block; font-size: 1.15em; line-height: 1; }
 
 /* ---------- motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {

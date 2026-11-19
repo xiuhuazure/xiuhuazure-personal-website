@@ -26,3 +26,9 @@ Then open http://localhost:8080
 2. Pick this repository and branch.
 3. Framework preset: None. Build command: leave empty. Build output directory: `/`.
 4. Name the project `xiuhuazure` so it lands on `xiuhuazure.pages.dev`.
+
+## Planned
+
+- Substack: its own section on the page (not only an icon).
+- Socials: TikTok, Instagram and YouTube as icons in the footer.
+- Keep the existing YouTube buttons in the page as they are.

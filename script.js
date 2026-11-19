@@ -1,8 +1,5 @@
 // Xiuhuazure · tiny touches only
 (function () {
-  var year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
-
   // the sunflower glints spin a little when tapped
   document.querySelectorAll('.glint').forEach(function (g) {
     g.style.cursor = 'pointer';
