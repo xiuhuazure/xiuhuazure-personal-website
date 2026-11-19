@@ -297,6 +297,27 @@ mark.hl {
   50% { transform: scale(.75) rotate(25deg); }
 }
 
+/* hand-drawn lily, tinted with CSS so it can take any palette colour.
+   Desktop: doodled over the corner of the polaroid.
+   Phones: tucked beside the word Welcome. */
+.lily {
+  display: none;
+  position: absolute;
+  aspect-ratio: 1;
+  background: var(--ink);
+  -webkit-mask: url("/assets/lily-doodle.png") center / contain no-repeat;
+  mask: url("/assets/lily-doodle.png") center / contain no-repeat;
+  pointer-events: none;
+}
+.welcome { position: relative; display: inline-block; }
+.lily--art { display: block; width: 180px; left: -178px; bottom: -64px; transform: rotate(-14deg); z-index: 2; }
+.lily--title { width: .62em; right: -.58em; top: -.34em; transform: rotate(16deg); }
+
+@media (max-width: 880px) {
+  .lily--art { display: none; }
+  .lily--title { display: block; }
+}
+
 @media (max-width: 880px) {
   .hero__grid { grid-template-columns: 1fr; }
   .portrait { width: min(88%, 420px); margin-top: 8px; }
@@ -327,7 +348,8 @@ mark.hl {
   font-size: clamp(1.25rem, 2.4vw, 1.7rem);
   white-space: nowrap;
 }
-.ticker__track svg { width: 22px; height: 22px; flex: none; }
+.ticker__track img { width: 30px; height: 30px; flex: none; animation: spin 14s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 @keyframes drift { to { transform: translateX(-50%); } }
 
 /* ---------- section heads ---------- */
