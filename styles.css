@@ -134,13 +134,12 @@ h2 {
 }
 .scribble:hover::after { transform: scaleX(1.06) rotate(-1deg); }
 
-/* lilac marker highlight behind a few key words (flat fill, no gradient) */
+/* lilac dry brush highlight behind a few key words (an image, no gradient) */
 mark.hl {
-  background: var(--lilac);
+  background: url("/assets/brush-lilac.png?v=2") center / 100% 100% no-repeat;
   color: var(--ink);
-  padding: 0 .22em;
-  margin: 0 -.05em;
-  border-radius: 3px 9px 4px 11px / 9px 3px 10px 4px;
+  padding: .14em .3em .1em;
+  margin: 0 -.24em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
