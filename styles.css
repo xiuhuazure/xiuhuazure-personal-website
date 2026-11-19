@@ -136,10 +136,14 @@ h2 {
 
 /* lilac dry brush highlight behind a few key words (an image, no gradient) */
 mark.hl {
-  background: url("/assets/brush-lilac.png?v=3") center / 100% 100% no-repeat;
+  background: none;
   color: var(--ink);
-  padding: .04em .22em 0;
-  margin: 0 -.17em;
+  /* ragged brush ends keep a fixed size, only the even middle stretches */
+  border: 0 solid transparent;
+  border-width: 0 .4em;
+  border-image: url("/assets/brush-lilac.png?v=4") 0 110 fill / 0 .4em stretch;
+  padding: .04em 0 0;
+  margin: 0 -.34em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
