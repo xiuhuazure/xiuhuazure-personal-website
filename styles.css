@@ -134,6 +134,17 @@ h2 {
 }
 .scribble:hover::after { transform: scaleX(1.06) rotate(-1deg); }
 
+/* lilac marker highlight behind a few key words (flat fill, no gradient) */
+mark.hl {
+  background: var(--lilac);
+  color: var(--ink);
+  padding: 0 .22em;
+  margin: 0 -.05em;
+  border-radius: 3px 9px 4px 11px / 9px 3px 10px 4px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 /* ---------- header ---------- */
 .top {
   position: sticky;
