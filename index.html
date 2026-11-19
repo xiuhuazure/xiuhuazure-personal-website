@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>xiuhuazure's corner</title>
-  <meta name="description" content="Xiuhuazure is a personal side quest diary. Cozy gaming, quiet discoveries in beautiful virtual worlds, and everyday moments when the time feels right.">
-  <meta name="theme-color" content="#FFE38C">
+  <meta name="description" content="Xiuhuazure is a gaming-first visual diary of quests, scenery, mistakes, and small moments worth remembering. Genshin Impact now, more worlds soon.">
+  <meta name="theme-color" content="#1E2639">
   <link rel="canonical" href="https://xiuhuazure.pages.dev/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="xiuhuazure's corner">
-  <meta property="og:description" content="Genshin Impact, cozy gaming, personal side quests.">
+  <meta property="og:description" content="A personal side quest diary. Genshin Impact, cozy gaming, personal side quests.">
   <meta property="og:url" content="https://xiuhuazure.pages.dev/">
   <meta property="og:image" content="https://xiuhuazure.pages.dev/assets/og-portrait.jpg?v=2">
   <meta name="twitter:card" content="summary">
@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Nunito:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         </g>
       </symbol>
       <symbol id="sunflower" viewBox="0 0 100 100">
-        <g fill="#F9C93B" stroke="#35364B" stroke-width="2.4" stroke-linejoin="round">
+        <g fill="#F9C93B" stroke="#28334B" stroke-width="2.4" stroke-linejoin="round">
           <ellipse cx="50" cy="22" rx="9" ry="18"/>
           <ellipse cx="50" cy="22" rx="9" ry="18" transform="rotate(30 50 50)"/>
           <ellipse cx="50" cy="22" rx="9" ry="18" transform="rotate(60 50 50)"/>
@@ -50,8 +50,8 @@
           <ellipse cx="50" cy="22" rx="9" ry="18" transform="rotate(300 50 50)"/>
           <ellipse cx="50" cy="22" rx="9" ry="18" transform="rotate(330 50 50)"/>
         </g>
-        <circle cx="50" cy="50" r="15" fill="#5A3A22" stroke="#35364B" stroke-width="2.4"/>
-        <g fill="#35364B"><circle cx="45" cy="46" r="1.6"/><circle cx="54" cy="47" r="1.6"/><circle cx="49" cy="54" r="1.6"/><circle cx="56" cy="55" r="1.4"/><circle cx="43" cy="55" r="1.4"/></g>
+        <circle cx="50" cy="50" r="15" fill="#5A3A22" stroke="#28334B" stroke-width="2.4"/>
+        <g fill="#28334B"><circle cx="45" cy="46" r="1.6"/><circle cx="54" cy="47" r="1.6"/><circle cx="49" cy="54" r="1.6"/><circle cx="56" cy="55" r="1.4"/><circle cx="43" cy="55" r="1.4"/></g>
       </symbol>
       <symbol id="heart" viewBox="0 0 40 36">
         <path d="M20 32C9 24 3 18 4 11c1-5 6-8 10-6 3 1 5 4 6 6 1-2 3-5 6-6 4-2 9 1 10 6 1 7-5 13-16 21z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,8 +76,15 @@
 
   <main id="main">
 
-    <!-- 01 hero -->
+    <!-- 01 hero: watercolor welcome, then midnight -->
     <section class="hero" id="top">
+      <div class="hero__banner" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 700px)" srcset="/assets/watercolor-banner-900.webp">
+          <img src="/assets/watercolor-banner.webp" alt="" width="1672" height="531">
+        </picture>
+      </div>
+
       <div class="wrap hero__grid">
         <div class="hero__text">
           <p class="eyebrow">entry no. 001 <span aria-hidden="true">·</span> a personal side quest diary</p>
@@ -97,6 +104,7 @@
               <span>save file 01</span>
               <span class="savefile__dot" aria-hidden="true"></span>
             </div>
+            <div><dt>now playing</dt><dd>Genshin Impact</dd></div>
             <div><dt>location</dt><dd>Teyvat, mostly</dd></div>
             <div><dt>mood</dt><dd>cozy, a little sleepy</dd></div>
             <div><dt>next entry</dt><dd>whenever it feels right</dd></div>
@@ -121,60 +129,69 @@
     <!-- ticker -->
     <div class="ticker" aria-label="genshin impact, cozy gaming, personal side quests">
       <div class="ticker__track" aria-hidden="true">
-        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
-        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="30" height="30">
+        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>genshin impact</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>cozy gaming</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
+        <span>personal side quests</span><img src="/assets/flower-blue.png" alt="" width="26" height="26">
       </div>
     </div>
 
-    <!-- 02 quest log -->
+    <!-- 02 quest log: the worlds, light -->
     <section class="quests" id="quests" aria-labelledby="quests-title">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">02 <span aria-hidden="true">/</span> quest log</p>
-          <h2 id="quests-title">What you'll find in here</h2>
-          <p class="section-head__note">Three kinds of entries. Different games, <mark class="hl">same little diary.</mark></p>
+          <h2 id="quests-title">Worlds I'm exploring</h2>
+          <p class="section-head__note">One main quest, a couple of side quests waiting their turn. Different worlds, <mark class="hl">same little diary.</mark></p>
         </div>
 
         <ol class="log">
           <li class="log__row">
             <span class="log__num">01</span>
             <div class="log__body">
-              <h3>side quest no. 01 <span class="log__tag">/ gameplay</span></h3>
-              <p>Genshin Impact, boss fights, and long detours to look at the sky. The playthroughs, mistakes included.</p>
+              <h3>Genshin Impact <span class="log__tag">main quest / teyvat</span></h3>
+              <p>Where most evenings go. Story quests, bosses, long detours, and far too many screenshots of Teyvat.</p>
             </div>
-            <span class="status status--on">in progress</span>
+            <span class="status status--on">playing now</span>
           </li>
-          <li class="log__row">
+          <li class="log__row log__row--locked">
             <span class="log__num">02</span>
             <div class="log__body">
-              <h3>postcard from [game world] <span class="log__tag">/ scenery</span></h3>
-              <p>Screenshots, landscapes, and the quiet surprises tucked into beautiful virtual places.</p>
+              <h3>Wuthering Waves <span class="log__tag">side quest</span></h3>
+              <p>A new world on the list, for when the main quest gives me a breather.</p>
             </div>
-            <span class="status status--on">in progress</span>
+            <span class="status"><em>(soon)</em></span>
           </li>
           <li class="log__row log__row--locked">
             <span class="log__num">03</span>
             <div class="log__body">
-              <h3>offline notes <span class="log__tag">/ everyday moments</span></h3>
-              <p>A day away from the screen. Only when I feel ready.</p>
+              <h3>Where Winds Meet <span class="log__tag">side quest</span></h3>
+              <p>Saved for later. Long rides, quiet scenery, and getting lost on purpose.</p>
             </div>
             <span class="status"><em>(soon)</em></span>
           </li>
         </ol>
+
+        <div class="key">
+          <p class="key__title">how entries are labeled</p>
+          <dl class="key__list">
+            <div><dt>side quest no. 01</dt><dd>gameplay. Story, bosses, mistakes, detours.</dd></div>
+            <div><dt>postcard from teyvat</dt><dd>scenery. Quiet views and screenshots, named after the world they come from.</dd></div>
+            <div><dt>offline notes <em>(soon)</em></dt><dd>everyday moments, when I feel ready.</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <!-- 03 recent pages -->
+    <!-- 03 recent pages: moody cards, dark -->
     <section class="pages" id="pages" aria-labelledby="pages-title">
       <div class="wrap">
         <div class="section-head section-head--row">
@@ -187,64 +204,63 @@
 
         <div class="shelf">
           <a class="entry entry--feature" href="https://www.youtube.com/@xiuhuazure/videos" target="_blank" rel="noopener">
-            <div class="thumb thumb--gold">
+            <div class="thumb thumb--azure">
               <span class="thumb__moon" aria-hidden="true"></span>
               <span class="thumb__moon thumb__moon--small" aria-hidden="true"></span>
               <svg class="thumb__glint" aria-hidden="true"><use href="#glint"/></svg>
               <span class="thumb__play" aria-hidden="true"></span>
               <div class="thumb__plate">
                 <span class="thumb__no">xiuhuazure / 01</span>
-                <span class="thumb__title">new little adventure</span>
+                <span class="thumb__title">side quest no. 01</span>
               </div>
             </div>
             <div class="entry__meta">
-              <span class="entry__cat">gameplay / quest</span>
+              <span class="entry__cat">gameplay / genshin impact <span class="sample">sample entry</span></span>
               <span class="entry__line">First steps into a new region, a boss I definitely underestimated, and a lot of wandering.</span>
             </div>
           </a>
 
           <a class="entry" href="https://www.youtube.com/@xiuhuazure/videos" target="_blank" rel="noopener">
-            <div class="thumb thumb--butter">
+            <div class="thumb thumb--violet">
               <span class="thumb__moon" aria-hidden="true"></span>
               <span class="thumb__moon thumb__moon--small" aria-hidden="true"></span>
               <svg class="thumb__glint" aria-hidden="true"><use href="#glint"/></svg>
               <span class="thumb__play" aria-hidden="true"></span>
               <div class="thumb__plate">
                 <span class="thumb__no">xiuhuazure / 02</span>
-                <span class="thumb__title">lost in this world</span>
+                <span class="thumb__title">postcard from teyvat</span>
               </div>
             </div>
             <div class="entry__meta">
-              <span class="entry__cat">discovery / scenery</span>
+              <span class="entry__cat">scenery / discovery <span class="sample">sample entry</span></span>
               <span class="entry__line">No objective, just a camera and a sunset.</span>
             </div>
           </a>
 
-          <a class="entry" href="https://www.youtube.com/@xiuhuazure/videos" target="_blank" rel="noopener">
-            <div class="thumb thumb--honey">
+          <div class="entry entry--locked">
+            <div class="thumb thumb--night">
               <span class="thumb__moon" aria-hidden="true"></span>
               <span class="thumb__moon thumb__moon--small" aria-hidden="true"></span>
               <svg class="thumb__glint" aria-hidden="true"><use href="#glint"/></svg>
-              <span class="thumb__play" aria-hidden="true"></span>
               <div class="thumb__plate">
                 <span class="thumb__no">xiuhuazure / 03</span>
-                <span class="thumb__title">a day offline</span>
+                <span class="thumb__title">offline notes</span>
               </div>
             </div>
             <div class="entry__meta">
-              <span class="entry__cat">later / irl <em>(soon)</em></span>
+              <span class="entry__cat">everyday moments <em>(soon)</em></span>
               <span class="entry__line">Saved for a day that feels right.</span>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 04 about, inverted -->
+    <!-- 04 about: light diary note -->
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="wrap about__grid">
         <div class="letter">
-          <p class="eyebrow eyebrow--light">04 <span aria-hidden="true">/</span> about</p>
+          <p class="eyebrow">04 <span aria-hidden="true">/</span> about</p>
           <h2 id="about-title" class="letter__greeting">Dear diary,</h2>
           <p>This channel started as a place to keep the moments I didn't want to forget. The view from a cliff I climbed for no reason. The fight that took eleven tries. The tiny side quest nobody talks about.</p>
           <p>It's gaming first, for now. Someday it might wander offline too, into slower days and everyday things. There's no schedule to keep up with here, and no pressure. Just a diary, opened whenever there's something worth writing down.</p>
@@ -270,15 +286,15 @@
 
           <h3 class="notes__title">on the shelf</h3>
           <ul class="spines">
-            <li class="spine spine--gold">Genshin Impact</li>
-            <li class="spine spine--butter">Other Worlds</li>
-            <li class="spine spine--ghost">IRL Side Quests <em>(later)</em></li>
+            <li class="spine spine--lilac">Genshin Impact</li>
+            <li class="spine spine--peri">Other Worlds <span>Wuthering Waves, Where Winds Meet</span></li>
+            <li class="spine spine--ghost">Offline Notes <em>(later)</em></li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <!-- 05 say hi -->
+    <!-- 05 say hi: dark -->
     <section class="hello" id="hello" aria-labelledby="hello-title">
       <div class="wrap">
         <article class="postcard">
