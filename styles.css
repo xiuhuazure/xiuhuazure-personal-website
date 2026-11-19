@@ -704,8 +704,8 @@ mark.hl {
   background: var(--lilac);
   color: var(--ink);
   border-top: var(--line);
-  padding: 26px 0;
-  font-size: .95rem;
+  padding: 12px 0;
+  font-size: .92rem;
 }
 .foot__inner {
   display: flex;
