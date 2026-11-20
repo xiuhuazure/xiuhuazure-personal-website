@@ -2,7 +2,6 @@
 (function () {
   // the sunflower glints spin a little when tapped
   document.querySelectorAll('.glint').forEach(function (g) {
-    g.style.cursor = 'pointer';
     g.style.pointerEvents = 'auto';
     g.addEventListener('click', function () {
       if (!g.animate) return;
@@ -12,4 +11,14 @@
       );
     });
   });
+  // heart cursor: fill the heart while the mouse button is held down
+  var root = document.documentElement;
+  var release = function () { root.classList.remove('is-pressing'); };
+  document.addEventListener('pointerdown', function (e) {
+    if (e.pointerType === 'mouse' && e.button === 0) root.classList.add('is-pressing');
+  });
+  document.addEventListener('pointerup', release);
+  document.addEventListener('pointercancel', release);
+  window.addEventListener('blur', release);
+  document.addEventListener('dragend', release);
 })();

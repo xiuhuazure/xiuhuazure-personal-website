@@ -744,6 +744,32 @@ a.entry:hover .thumb__play { opacity: 1; }
 .foot p { margin: 0; font-weight: 700; color: var(--muted); }
 .foot__heart { display: inline-block; font-size: 1.15em; line-height: 1; color: var(--accent-pink); }
 
+/* ---------- heart cursor (mouse and trackpad only) ----------
+   pink outline by default, lilac over anything clickable,
+   and the heart fills in while the button is held down. */
+@media (hover: hover) and (pointer: fine) {
+html, html * {
+  cursor: url("/assets/cursor/heart.png?v=1") 16 16, auto;
+  cursor: -webkit-image-set(url("/assets/cursor/heart.png?v=1") 1x, url("/assets/cursor/heart@2x.png?v=1") 2x) 16 16, auto;
+  cursor: image-set(url("/assets/cursor/heart.png?v=1") 1x, url("/assets/cursor/heart@2x.png?v=1") 2x) 16 16, auto;
+}
+a, button, [role="button"], label, summary, .glint, .glint *, a * {
+  cursor: url("/assets/cursor/heart-hover.png?v=1") 16 16, pointer;
+  cursor: -webkit-image-set(url("/assets/cursor/heart-hover.png?v=1") 1x, url("/assets/cursor/heart-hover@2x.png?v=1") 2x) 16 16, pointer;
+  cursor: image-set(url("/assets/cursor/heart-hover.png?v=1") 1x, url("/assets/cursor/heart-hover@2x.png?v=1") 2x) 16 16, pointer;
+}
+html.is-pressing, html.is-pressing * {
+  cursor: url("/assets/cursor/heart-fill.png?v=1") 16 16, auto;
+  cursor: -webkit-image-set(url("/assets/cursor/heart-fill.png?v=1") 1x, url("/assets/cursor/heart-fill@2x.png?v=1") 2x) 16 16, auto;
+  cursor: image-set(url("/assets/cursor/heart-fill.png?v=1") 1x, url("/assets/cursor/heart-fill@2x.png?v=1") 2x) 16 16, auto;
+}
+html.is-pressing a, html.is-pressing a *, html.is-pressing button, html.is-pressing [role="button"], html.is-pressing label, html.is-pressing summary, html.is-pressing .glint, html.is-pressing .glint * {
+  cursor: url("/assets/cursor/heart-fill-hover.png?v=1") 16 16, pointer;
+  cursor: -webkit-image-set(url("/assets/cursor/heart-fill-hover.png?v=1") 1x, url("/assets/cursor/heart-fill-hover@2x.png?v=1") 2x) 16 16, pointer;
+  cursor: image-set(url("/assets/cursor/heart-fill-hover.png?v=1") 1x, url("/assets/cursor/heart-fill-hover@2x.png?v=1") 2x) 16 16, pointer;
+}
+}
+
 /* ---------- motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
