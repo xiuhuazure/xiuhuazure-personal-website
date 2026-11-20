@@ -641,7 +641,10 @@ a.entry:hover .thumb__play { opacity: 1; }
   font-weight: 600;
   font-size: 1.5rem;
 }
-.notes__list dt svg { width: 16px; height: 16px; color: var(--accent-pink); flex: none; }
+.notes__list dt svg { width: 16px; height: 16px; color: var(--accent-pink); flex: none; animation: spin 9s linear infinite; }
+/* each star starts at a different angle so they don't turn in lockstep */
+.notes__list > div:nth-child(2) dt svg { animation-delay: -3s; }
+.notes__list > div:nth-child(3) dt svg { animation-delay: -6s; }
 .notes__list dd { margin: 2px 0 0 28px; color: var(--muted); }
 
 .spines { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
