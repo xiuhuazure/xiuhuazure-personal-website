@@ -293,7 +293,7 @@ mark.hl {
 
 .portrait {
   position: relative;
-  margin: 0;
+  margin: 16px 0 0; /* keeps the tape clear of the header line */
   padding: 14px 14px 18px;
   background: var(--surface-light);
   border-radius: 4px;
