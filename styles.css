@@ -362,7 +362,7 @@ mark.hl {
   gap: 22px;
   width: max-content;
   padding: 9px 0;
-  animation: drift 40s linear infinite;
+  animation: drift 80s linear infinite;
 }
 .ticker:hover .ticker__track { animation-play-state: paused; }
 .ticker__track span {
