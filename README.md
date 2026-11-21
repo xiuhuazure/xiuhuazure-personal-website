@@ -1,34 +1,32 @@
-# Xiuhuazure · personal site
+# xiuhuazure's corner
 
-A personal side quest diary. Plain static HTML, CSS and a few lines of JS, so there is no build step.
+A personal side quest diary. Cozy gaming, personal side quests, and small moments worth keeping.
 
-Future home: https://xiuhuazure.pages.dev
+**Live:** [xiuhuazure.pages.dev](https://xiuhuazure.pages.dev) · **YouTube:** [@xiuhuazure](https://www.youtube.com/@xiuhuazure)
 
-## Files
+![The homepage of xiuhuazure's corner](docs/screenshot.webp)
 
-- `index.html` the whole site, one page
-- `styles.css` design tokens and layout (Fraunces + Nunito, sunflower yellows, Twilight Ink / Deep Azure text)
-- `script.js` tiny touches (footer year, tap the glints)
-- `assets/` portrait illustration and icons
-- `404.html`, `_headers`, `robots.txt`, `sitemap.xml` Cloudflare Pages extras
+## Highlights
 
-## Preview locally
+- **Built from my own brand guidelines.** Colours and type live in CSS design tokens, with dark and light themes per section.
+- **Responsive and accessible.** Mobile first, 44px touch targets, visible focus ring, and animations pause for reduced motion.
+- **Hand-drawn details in code.** A heart cursor that fills when you click, brush-stroke highlights, and a lily doodle tinted with CSS.
+- **No framework, no build step.** Plain HTML, CSS and a little JavaScript, deployed on Cloudflare Pages.
+
+## Run it locally
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open http://localhost:8080
+Then open http://localhost:8080.
 
-## Deploy to Cloudflare Pages
+## Credits
 
-1. Cloudflare dashboard, Workers & Pages, Create, Pages, Connect to Git.
-2. Pick this repository and branch.
-3. Framework preset: None. Build command: leave empty. Build output directory: `/`.
-4. Name the project `xiuhuazure` so it lands on `xiuhuazure.pages.dev`.
+- Portrait, illustrations and brand guidelines: me
+- Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Nunito](https://fonts.google.com/specimen/Nunito) and [Dancing Script](https://fonts.google.com/specimen/Dancing+Script) (SIL Open Font License)
+- Built with help from [Claude](https://claude.ai) by Anthropic
 
-## Planned
+---
 
-- Substack: its own section on the page (not only an icon).
-- Socials: TikTok, Instagram and YouTube as icons in the footer.
-- Keep the existing YouTube buttons in the page as they are.
+© Xiuhuazure. The code is here to look at and learn from; the portrait, illustrations and brand assets are not for reuse.
