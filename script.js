@@ -21,4 +21,12 @@
   document.addEventListener('pointercancel', release);
   window.addEventListener('blur', release);
   document.addEventListener('dragend', release);
+  // email link assembled in the browser, so scrapers reading the HTML don't find it
+  document.querySelectorAll('.js-mail').forEach(function (el) {
+    var addr = el.dataset.u + '@' + el.dataset.d + '.' + el.dataset.t;
+    var a = document.createElement('a');
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+    el.replaceWith(a);
+  });
 })();
