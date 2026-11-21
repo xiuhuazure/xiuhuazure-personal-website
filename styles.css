@@ -345,7 +345,7 @@ mark.hl {
 
 @media (max-width: 880px) {
   .hero__grid { grid-template-columns: 1fr; }
-  .portrait { width: min(86%, 400px); margin-top: 44px; }
+  .portrait { width: min(86%, 400px); margin-top: 44px; margin-bottom: 24px; }
   .glint--a { left: -40px; }
   .glint--b { right: -30px; }
   .lily--art { display: none; }
