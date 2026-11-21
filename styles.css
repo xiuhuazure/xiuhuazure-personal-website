@@ -225,6 +225,7 @@ mark.hl {
   align-items: start;
 }
 .hero__text { padding-top: 8px; }
+.hero__grid > .portrait { align-self: center; } /* photo and lily sit centred beside the text */
 .hero__title { margin: 0 0 20px; font-weight: 600; }
 .welcome {
   position: relative;
