@@ -23,7 +23,6 @@ Then open http://localhost:8080.
 
 ## Credits
 
-- Portrait, illustrations and brand guidelines: me
 - Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Nunito](https://fonts.google.com/specimen/Nunito) and [Dancing Script](https://fonts.google.com/specimen/Dancing+Script) (SIL Open Font License)
 - Built with help from [Claude](https://claude.ai) by Anthropic
 
