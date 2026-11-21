@@ -647,6 +647,7 @@ a.entry:hover .thumb__play { opacity: 1; }
 /* each star starts at a different angle so they don't turn in lockstep */
 .notes__list > div:nth-child(2) dt svg { animation-delay: -3s; }
 .notes__list > div:nth-child(3) dt svg { animation-delay: -6s; }
+.notes__list > div:nth-child(4) dt svg { animation-delay: -1.5s; }
 .notes__list dd { margin: 2px 0 0 28px; color: var(--muted); }
 
 .spines { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
