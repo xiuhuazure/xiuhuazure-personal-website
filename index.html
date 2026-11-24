@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Nunito:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&text=Xiuhuazure&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=16">
+  <link rel="stylesheet" href="/styles.css?v=18">
 </head>
 <body>
 
@@ -210,6 +210,26 @@
           <a class="scribble" href="https://www.youtube.com/@xiuhuazure/videos" target="_blank" rel="noopener">every video on YouTube</a>
         </div>
 
+        <!--
+          ===== HOW TO ADD A VIDEO (full guide: docs/EDITING.md) =====
+          Copy this block, paste it as the FIRST card inside <div class="shelf">,
+          and add class "entry--feature" to whichever card should be the big one.
+
+          <a class="entry" href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+            <div class="thumb thumb--photo">
+              <img class="thumb__img" src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="" loading="lazy">
+              <span class="thumb__play" aria-hidden="true"></span>
+            </div>
+            <div class="entry__meta">
+              <span class="entry__cat">gameplay / genshin impact</span>
+              <span class="entry__line">One sentence about the video.</span>
+            </div>
+          </a>
+
+          VIDEO_ID = the part after "watch?v=" in the YouTube link (twice above).
+          Your own picture instead: put it in assets/videos/ and use
+          src="/assets/videos/your-file.jpg"
+        -->
         <div class="shelf">
           <a class="entry entry--feature" href="https://www.youtube.com/@xiuhuazure/videos" target="_blank" rel="noopener">
             <div class="thumb thumb--azure">
