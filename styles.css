@@ -483,7 +483,7 @@ mark.hl {
 /* Substack: the one filled call to action in this section */
 .btn--substack { background: var(--accent-sunflower); color: var(--bg-dark); }
 .btn--substack:hover { background: #FBD86A; }
-.btn--substack svg { width: 18px; height: 18px; flex: none; }
+.btn--substack { min-height: 44px; padding: 0 16px; gap: 6px; }
 .shelf {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
