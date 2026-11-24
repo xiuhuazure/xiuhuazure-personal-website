@@ -479,6 +479,11 @@ mark.hl {
 .pages { padding: clamp(44px, 5.5vw, 76px) 0; }
 .pages .scribble { color: var(--accent-lilac); }
 .pages .scribble:hover { color: var(--accent-pink); }
+.head-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
+/* Substack: the one filled call to action in this section */
+.btn--substack { background: var(--accent-sunflower); color: var(--bg-dark); }
+.btn--substack:hover { background: #FBD86A; }
+.btn--substack svg { width: 18px; height: 18px; flex: none; }
 .shelf {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
